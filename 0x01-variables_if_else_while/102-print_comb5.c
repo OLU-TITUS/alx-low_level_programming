@@ -21,7 +21,7 @@ int main(void)
 			putchar((p % 10) + '10');
 			putchar(' ');
 			putchar((q / 10) + '10');
-			putchar((q / 10) + '10');
+			putchar((q % 10) + '10');
 			if (p == 98 && q == 99)
 				continue;
 			putchar(',');
