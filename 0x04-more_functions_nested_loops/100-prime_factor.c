@@ -25,6 +25,6 @@ int main(void)
 			}
 		}
 	}
-	print("%d\n", prime);
+	print("%lu\n", prime);
 	return (0);
 }
