@@ -1,30 +1,20 @@
 #include <stdio.h>
 
 /**
- * main - Print prime factor of 612852475143
+ * main - Entry
  *
  * Return: Always 0
  */
 
 int main(void)
 {
-	long prime = 612852475143, div;
+	unsigned long int i = 3, n = 612852475143;
 
-	while (div < (prime / 2))
+	for (; i < 12057; i += 2)
 	{
-		if ((prime % 2) == 0)
-		{
-			prime /= 2;
-			continue;
-		}
-		for (div = 3; div < (prime / 2); div += 2)
-		{
-			if ((prime % div) == 0)
-			{
-				prime /= div;
-			}
-		}
+		while (n % i == 0 && n != i)
+			n /= i;
 	}
-	print("%lu\n", prime);
+	printf("%lu\n", n);
 	return (0);
 }
