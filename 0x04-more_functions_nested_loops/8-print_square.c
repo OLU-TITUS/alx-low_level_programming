@@ -3,22 +3,26 @@
 /**
  * print_square - A function thst pronts a square followed by a new line
  * @size: A input integer
- * Return: 0
  */
 
 void print_square(int size)
 {
-		int i, j;
+	int x, y;
 
-		if (size > 0)
+	if (size > 0)
+	{
+		for (x = 0; x <= size; x++)
 		{
-			for (i = 0; i < size; i++)
+			for (y = 0; y <= size; y++)
 			{
-			for (j = 0; j < size; j++)
 				_putchar('#');
-				_putchar('\n');
 			}
-		}
-		else
+			if (x == size - 1)
+			{
+				continue;
+			}
 			_putchar('\n');
+		}
+	}
+	_putchar('\n');
 }
