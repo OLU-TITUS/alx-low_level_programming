@@ -2,8 +2,8 @@
 
 /**
  * _puts - Function that print a string to stdout
- * @str: An integer input
- * Return: Nothing
+ *
+ * @str: An input string
  */
 
 void _puts(char *str)
