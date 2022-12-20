@@ -3,22 +3,23 @@
 
 /**
  * print_array - prints element of array of integer
- * @a: impit integer
- * @n: inpit integer
+ * @a: input to array
+ * @n: number of array element
  * Return: Nothing
  */
 
 void print_array(int *a, int n)
 {
-	int i = 0;
+	int i;
 
-	for (; i < n; i++)
+	for (i = 0; i < n; i++)
 	{
 		printf("%d", a[i]);
-		if (i < n - 1)
+		if (i != n - 1)
 		{
 			print(",");
+			print(" ");
 		}
 	}
-	putchar('\n');
+	printf("\n");
 }
