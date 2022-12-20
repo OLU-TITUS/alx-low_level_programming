@@ -3,18 +3,18 @@
 /**
  * print_rev - A function that print string in reverse
  * @s: An input string
- * Return: Nothing
  */
 
 void print_rev(char *s)
 {
-	int index;
+	int i, n;
 
-	for (index = 0; s[index] != '\0'; index++)
-		:
-	for (index = index - 1; s[index] != '\0'; index--)
-		{
-			_putchar(s[index]);
-		}
+	n = 0;
+	while (s[n] != '\0')
+		n++;
+	for (i = n - 1; i >= 0; i--)
+	{
+		_putchar(s[i]);
+	}
 	_putchar('\n');
 }
