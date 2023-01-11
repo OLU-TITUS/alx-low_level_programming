@@ -24,17 +24,16 @@ int coinConverter(int i)
 			i -= 10;
 		else if (i % 5 == 0)
 			i -= 5;
-			else if (i % 2 == 0)
-			{
-				if (i % 10 == 6)
+		else if (i % 2 == 0)
+		{
+			if (i % 10 == 6)
 				i -= 1;
 			else
 				i -= 2;
-			}
-			else
-				i -= 1;
-
-			count++;
+		}
+		else
+			i -= 1;
+		count++;
 	}
 	return (count);
 }
